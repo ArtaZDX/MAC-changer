@@ -3,6 +3,11 @@ import netifaces
 import re
 import subprocess
 
+'''
+For Using just write
+python3 MAC_changer.py -i eth0 -m <Your MAC addr>
+'''
+
 def get_args():
 	parser = optparse.OptionParser()
 	parser.add_option("-i", "--interface", dest="interface", help="Please get a interface with -i or --interface")
